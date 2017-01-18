@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.6.0">
+<eagle version="7.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -12166,8 +12166,8 @@ DIN A4, landscape with location and doc. field</description>
 <instance part="GND4" gate="1" x="142.24" y="149.86"/>
 <instance part="P+2" gate="1" x="33.02" y="154.94"/>
 <instance part="GND5" gate="1" x="33.02" y="137.16"/>
-<instance part="X1" gate="-1" x="25.4" y="147.32"/>
-<instance part="X1" gate="-2" x="25.4" y="142.24"/>
+<instance part="X1" gate="-1" x="25.4" y="142.24"/>
+<instance part="X1" gate="-2" x="25.4" y="147.32"/>
 <instance part="R1" gate="G$1" x="27.94" y="63.5"/>
 <instance part="+3V1" gate="G$1" x="20.32" y="68.58"/>
 <instance part="+3V2" gate="G$1" x="152.4" y="149.86"/>
@@ -12232,10 +12232,10 @@ DIN A4, landscape with location and doc. field</description>
 <wire x1="142.24" y1="152.4" x2="137.16" y2="152.4" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="X1" gate="-2" pin="KL"/>
 <pinref part="GND5" gate="1" pin="GND"/>
-<wire x1="30.48" y1="142.24" x2="33.02" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="142.24" x2="33.02" y2="139.7" width="0.1524" layer="91"/>
+<pinref part="X1" gate="-1" pin="KL"/>
+<wire x1="30.48" y1="142.24" x2="33.02" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C1" gate="G$1" pin="-"/>
@@ -12335,10 +12335,10 @@ DIN A4, landscape with location and doc. field</description>
 <wire x1="96.52" y1="142.24" x2="104.14" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="X1" gate="-1" pin="KL"/>
 <pinref part="P+2" gate="1" pin="+12V"/>
-<wire x1="30.48" y1="147.32" x2="33.02" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="147.32" x2="33.02" y2="152.4" width="0.1524" layer="91"/>
+<pinref part="X1" gate="-2" pin="KL"/>
+<wire x1="30.48" y1="147.32" x2="33.02" y2="147.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="CH_PD" class="0">
