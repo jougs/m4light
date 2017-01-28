@@ -12132,9 +12132,6 @@ DIN A4, landscape with location and doc. field</description>
 <part name="H2" library="holes" deviceset="MOUNT-HOLE" device="3.2"/>
 <part name="H3" library="holes" deviceset="MOUNT-HOLE" device="3.2"/>
 <part name="H4" library="holes" deviceset="MOUNT-HOLE" device="3.2"/>
-<part name="JP2" library="pinhead" deviceset="PINHD-1X2" device=""/>
-<part name="+3V7" library="supply1" deviceset="+3V3" device=""/>
-<part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="JP5" library="pinhead" deviceset="PINHD-2X8" device=""/>
 <part name="+3V10" library="supply1" deviceset="+3V3" device=""/>
 </parts>
@@ -12148,7 +12145,6 @@ DIN A4, landscape with location and doc. field</description>
 <text x="15.24" y="78.74" size="1.778" layer="91">Chip enable RC chain</text>
 <text x="63.5" y="116.84" size="1.778" layer="91">Programming enable</text>
 <text x="175.26" y="116.84" size="1.778" layer="91">ESP-201</text>
-<text x="165.1" y="160.02" size="1.778" layer="91">3V3 Test point</text>
 <text x="111.76" y="78.74" size="1.778" layer="91">GPIO header</text>
 <text x="63.5" y="78.74" size="1.778" layer="91">Reset</text>
 <text x="17.78" y="20.32" size="1.27" layer="91">https://adlerweb.deviantart.com/art/ESP8266-ESP-201-Module-Pinout-Diagram-Cheat-Sheet-575951137</text>
@@ -12200,9 +12196,6 @@ DIN A4, landscape with location and doc. field</description>
 <instance part="H2" gate="G$1" x="175.26" y="48.26"/>
 <instance part="H3" gate="G$1" x="175.26" y="40.64"/>
 <instance part="H4" gate="G$1" x="175.26" y="33.02"/>
-<instance part="JP2" gate="G$1" x="180.34" y="144.78"/>
-<instance part="+3V7" gate="G$1" x="170.18" y="154.94"/>
-<instance part="GND9" gate="1" x="170.18" y="139.7"/>
 <instance part="JP5" gate="A" x="152.4" y="63.5"/>
 <instance part="+3V10" gate="G$1" x="165.1" y="81.28"/>
 </instances>
@@ -12321,12 +12314,6 @@ DIN A4, landscape with location and doc. field</description>
 <pinref part="C3" gate="G$1" pin="2"/>
 <pinref part="GND13" gate="1" pin="GND"/>
 </segment>
-<segment>
-<pinref part="JP2" gate="G$1" pin="2"/>
-<wire x1="177.8" y1="144.78" x2="170.18" y2="144.78" width="0.1524" layer="91"/>
-<wire x1="170.18" y1="144.78" x2="170.18" y2="142.24" width="0.1524" layer="91"/>
-<pinref part="GND9" gate="1" pin="GND"/>
-</segment>
 </net>
 <net name="+12V" class="0">
 <segment>
@@ -12397,12 +12384,6 @@ DIN A4, landscape with location and doc. field</description>
 <segment>
 <pinref part="R4" gate="G$1" pin="2"/>
 <pinref part="+3V9" gate="G$1" pin="+3V3"/>
-</segment>
-<segment>
-<pinref part="JP2" gate="G$1" pin="1"/>
-<wire x1="177.8" y1="147.32" x2="170.18" y2="147.32" width="0.1524" layer="91"/>
-<wire x1="170.18" y1="147.32" x2="170.18" y2="152.4" width="0.1524" layer="91"/>
-<pinref part="+3V7" gate="G$1" pin="+3V3"/>
 </segment>
 <segment>
 <pinref part="JP5" gate="A" pin="16"/>
