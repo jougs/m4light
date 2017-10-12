@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.6.0">
+<eagle version="7.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -3741,8 +3741,8 @@ Grid 5.08 mm&lt;p&gt;
 <instance part="H2" gate="G$1" x="81.28" y="111.76"/>
 <instance part="H3" gate="G$1" x="81.28" y="104.14"/>
 <instance part="H4" gate="G$1" x="81.28" y="96.52"/>
-<instance part="X3" gate="-1" x="58.42" y="109.22"/>
-<instance part="X3" gate="-2" x="58.42" y="104.14"/>
+<instance part="X3" gate="-1" x="58.42" y="104.14"/>
+<instance part="X3" gate="-2" x="58.42" y="109.22"/>
 <instance part="P+3" gate="1" x="68.58" y="116.84"/>
 <instance part="GND5" gate="1" x="68.58" y="99.06"/>
 <instance part="Q2" gate="G$1" x="109.22" y="60.96"/>
@@ -3797,10 +3797,10 @@ Grid 5.08 mm&lt;p&gt;
 <pinref part="GND2" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="X3" gate="-2" pin="KL"/>
 <wire x1="68.58" y1="101.6" x2="68.58" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="104.14" x2="63.5" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="GND5" gate="1" pin="GND"/>
+<pinref part="X3" gate="-1" pin="KL"/>
+<wire x1="63.5" y1="104.14" x2="68.58" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="Q2" gate="G$1" pin="S"/>
@@ -3881,10 +3881,10 @@ Grid 5.08 mm&lt;p&gt;
 <wire x1="40.64" y1="73.66" x2="35.56" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="X3" gate="-1" pin="KL"/>
 <pinref part="P+3" gate="1" pin="+12V"/>
 <wire x1="68.58" y1="114.3" x2="68.58" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="109.22" x2="63.5" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="X3" gate="-2" pin="KL"/>
+<wire x1="63.5" y1="109.22" x2="68.58" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="X2" gate="-1" pin="KL"/>
