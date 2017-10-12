@@ -3856,10 +3856,10 @@ type RDH, grid 15 mm</description>
 <part name="P+2" library="supply1" deviceset="+12V" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="JP10" library="pinhead" deviceset="PINHD-2X4" device=""/>
-<part name="R5" library="resistor" deviceset="R-EU_" device="0207/10"/>
-<part name="R6" library="resistor" deviceset="R-EU_" device="0207/10"/>
-<part name="R7" library="resistor" deviceset="R-EU_" device="0207/10"/>
-<part name="R8" library="resistor" deviceset="R-EU_" device="0207/10"/>
+<part name="R1" library="resistor" deviceset="R-EU_" device="0207/10"/>
+<part name="R2" library="resistor" deviceset="R-EU_" device="0207/10"/>
+<part name="R3" library="resistor" deviceset="R-EU_" device="0207/10"/>
+<part name="R4" library="resistor" deviceset="R-EU_" device="0207/10"/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
 <part name="JP1" library="pinhead" deviceset="PINHD-1X4" device=""/>
 <part name="X7" library="con-wago-508" deviceset="W237-02P" device=""/>
@@ -3905,10 +3905,10 @@ type RDH, grid 15 mm</description>
 <instance part="P+2" gate="1" x="66.04" y="167.64"/>
 <instance part="GND2" gate="1" x="66.04" y="152.4"/>
 <instance part="JP10" gate="A" x="111.76" y="119.38"/>
-<instance part="R5" gate="G$1" x="127" y="124.46"/>
-<instance part="R6" gate="G$1" x="139.7" y="121.92"/>
-<instance part="R7" gate="G$1" x="127" y="119.38"/>
-<instance part="R8" gate="G$1" x="139.7" y="116.84"/>
+<instance part="R1" gate="G$1" x="127" y="124.46"/>
+<instance part="R2" gate="G$1" x="139.7" y="121.92"/>
+<instance part="R3" gate="G$1" x="127" y="119.38"/>
+<instance part="R4" gate="G$1" x="139.7" y="116.84"/>
 <instance part="GND12" gate="1" x="149.86" y="111.76"/>
 <instance part="JP1" gate="A" x="111.76" y="99.06"/>
 <instance part="X7" gate="-1" x="81.28" y="160.02"/>
@@ -4003,20 +4003,20 @@ type RDH, grid 15 mm</description>
 <wire x1="66.04" y1="154.94" x2="60.96" y2="154.94" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R5" gate="G$1" pin="2"/>
+<pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="132.08" y1="124.46" x2="149.86" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="149.86" y1="124.46" x2="149.86" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="GND12" gate="1" pin="GND"/>
-<pinref part="R6" gate="G$1" pin="2"/>
+<pinref part="R2" gate="G$1" pin="2"/>
 <wire x1="149.86" y1="121.92" x2="149.86" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="149.86" y1="119.38" x2="149.86" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="149.86" y1="116.84" x2="149.86" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="144.78" y1="121.92" x2="149.86" y2="121.92" width="0.1524" layer="91"/>
 <junction x="149.86" y="121.92"/>
-<pinref part="R7" gate="G$1" pin="2"/>
+<pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="132.08" y1="119.38" x2="149.86" y2="119.38" width="0.1524" layer="91"/>
 <junction x="149.86" y="119.38"/>
-<pinref part="R8" gate="G$1" pin="2"/>
+<pinref part="R4" gate="G$1" pin="2"/>
 <wire x1="144.78" y1="116.84" x2="149.86" y2="116.84" width="0.1524" layer="91"/>
 <junction x="149.86" y="116.84"/>
 </segment>
@@ -4145,28 +4145,28 @@ type RDH, grid 15 mm</description>
 <net name="N$5" class="0">
 <segment>
 <pinref part="JP10" gate="A" pin="2"/>
-<pinref part="R5" gate="G$1" pin="1"/>
+<pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="121.92" y1="124.46" x2="116.84" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="0">
 <segment>
 <pinref part="JP10" gate="A" pin="4"/>
-<pinref part="R6" gate="G$1" pin="1"/>
+<pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="134.62" y1="121.92" x2="116.84" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$7" class="0">
 <segment>
 <pinref part="JP10" gate="A" pin="6"/>
-<pinref part="R7" gate="G$1" pin="1"/>
+<pinref part="R3" gate="G$1" pin="1"/>
 <wire x1="121.92" y1="119.38" x2="116.84" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$8" class="0">
 <segment>
 <pinref part="JP10" gate="A" pin="8"/>
-<pinref part="R8" gate="G$1" pin="1"/>
+<pinref part="R4" gate="G$1" pin="1"/>
 <wire x1="134.62" y1="116.84" x2="116.84" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 </net>
