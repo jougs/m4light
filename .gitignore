@@ -2,3 +2,4 @@
 *.b#*
 *.lck
 espmpylight/secret.py
+input_output/secret.py
